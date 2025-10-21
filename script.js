@@ -15,6 +15,10 @@
   })
 
   cw1.addEventListener("click", function () {
+
+    answer.innerHTML = '<div class="loading">Loading...</div>';
+
+    
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(array => {
